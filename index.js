@@ -114,3 +114,22 @@ mt_smtp_transport.sendMail({
     console.log(info);
   }
 });
+
+mt_smtp_transport.sendMail({
+    from: process.env.FROM_EMAIL,
+    to: process.env.OTHER_EMAIL,
+    subject: 'mt_smtp_transport ' + testID,
+    text: "Time: " + moment().valueOf(),
+    ses: { // optional extra arguments for SendRawEmail
+        Tags: [{
+            Name: 'tag name',
+            Value: 'tag value'
+        }]
+    }
+}, (err, info) => {
+  if (err) {
+    console.log(err);
+  } else if (info) {
+    console.log(info);
+  }
+});
