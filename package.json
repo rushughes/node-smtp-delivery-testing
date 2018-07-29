@@ -1,0 +1,25 @@
+{
+  "name": "smtp-delivery-testing",
+  "version": "1.0.0",
+  "description": "node mailer delivery testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushughes/node-smtp-delivery-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushughes/node-smtp-delivery-testing/issues"
+  },
+  "homepage": "https://github.com/rushughes/node-smtp-delivery-testing#readme",
+  "dependencies": {
+    "aws-sdk": "^2.282.1",
+    "dotenv": "^6.0.0",
+    "moment": "^2.22.2",
+    "nodemailer": "^4.6.7"
+  }
+}
